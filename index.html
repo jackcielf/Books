@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Books</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
@@ -57,10 +61,26 @@
         </a>
       </div>
     </header>
+
     <section id="banner">
       <h2>Já sabe por onde começar?</h2>
       <p>Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
-      <input type="search" placeholder="Qual será sua próxima leitura?">
+      <input type="search" placeholder="Qual será sua próxima leitura?" />
     </section>
+
+    <section id="carousel">
+      <h2>Novos lançamentos</h2>
+
+      <div class="swiper">
+        <div class="swiper-swipper">
+          <div class="swiper-slide">
+            <img src="./assets/images/ApacheKafka.svg"  alt="">
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   </body>
 </html>
