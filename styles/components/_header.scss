@@ -1,33 +1,62 @@
 @import "../abstract/variables";
 
 #header {
-    background-color: $white;
+  background-color: $white;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  .container {
     display: flex;
-    justify-content: space-between;
-    
-    .container {
-        display: flex;
-        align-items: center;
-        
-        .header_menu-hamburguer {
-            width: 24px;
-            height: 24px;
-            background-image: url(/assets/images/Menu.svg);
-            background-repeat: no-repeat;
-            background-position: center;
-            display: inline-block;
-        }
+    align-items: center;
 
-        span, img {
-            padding: 1em;
-        }
-
-        .list-menu {
-            display: none;
-        }
-
-        .container__button:checked~.list-menu {
-            display: block;
-        }
+    .header_menu-hamburguer {
+      width: 24px;
+      height: 24px;
+      background-image: url(/assets/images/Menu.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      display: inline-block;
     }
+
+    span,
+    img {
+      padding: 1em;
+    }
+
+    .list-menu {
+      width: 60vw;
+      display: none;
+      position: absolute;
+      top: 100%;
+
+      .list-menu__title {
+        color: $orange;
+        font-weight: 700;
+      }
+
+      .list-menu__title,
+      .list-menu__item {
+        padding: 1em;
+        background-color: $white;
+
+        a {
+          background: $blue-gradient;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    .container__button {
+        display: none;
+    }
+
+    // Abrindo e fechando o menu
+    .container__button:checked ~ .list-menu {
+      display: block;
+    }
+  }
 }

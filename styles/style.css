@@ -1,6 +1,9 @@
 /*
     http://meyerweb.com/eric/tools/css/reset/ 
 */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
 html,
 body,
 div,
@@ -133,12 +136,15 @@ table {
 } 
 body {
   background-color: #ebecee;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
 }
 
 #header {
   background-color: #fff;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 #header .container {
   display: flex;
@@ -152,10 +158,34 @@ body {
   background-position: center;
   display: inline-block;
 }
-#header .container span, #header .container img {
+#header .container span,
+#header .container img {
   padding: 1em;
 }
 #header .container .list-menu {
+  width: 60vw;
+  display: none;
+  position: absolute;
+  top: 100%;
+}
+#header .container .list-menu .list-menu__title {
+  color: #eb9b00;
+  font-weight: 700;
+}
+#header .container .list-menu .list-menu__title,
+#header .container .list-menu .list-menu__item {
+  padding: 1em;
+  background-color: #fff;
+}
+#header .container .list-menu .list-menu__title a,
+#header .container .list-menu .list-menu__item a {
+  background: linear-gradient(97.5deg, #002f52 35.49%, #326589 165.37%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-transform: uppercase;
+}
+#header .container .container__button {
   display: none;
 }
 #header .container .container__button:checked ~ .list-menu {
