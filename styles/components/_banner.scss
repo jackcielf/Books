@@ -1,0 +1,38 @@
+@import '../abstract/variables';
+
+#banner {
+    background: $blue-gradient;
+    color: $white;
+    text-align: center;
+    padding: 2.5em 2em;
+
+    h2 {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    p {
+        font-weight: 500;
+        margin: 1em 0;
+    }
+
+    input {
+        background-color: transparent;
+        border: 1px solid $white;
+        color: $white;
+        border-radius: 24px;
+        padding: 1em;
+        width: 100%;
+
+        &::placeholder {
+            font-family: $font;
+            font-size: 14px;
+            font-weight: 400;
+            text-align: center;
+            color: $white;
+            background: url(/assets/images/Lupa.svg) no-repeat;
+            background-position: 1em;
+        }
+    }
+}
+
