@@ -1,0 +1,33 @@
+@import "../abstract/variables";
+
+#header {
+    background-color: $white;
+    display: flex;
+    justify-content: space-between;
+    
+    .container {
+        display: flex;
+        align-items: center;
+        
+        .header_menu-hamburguer {
+            width: 24px;
+            height: 24px;
+            background-image: url(/assets/images/Menu.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            display: inline-block;
+        }
+
+        span, img {
+            padding: 1em;
+        }
+
+        .list-menu {
+            display: none;
+        }
+
+        .container__button:checked~.list-menu {
+            display: block;
+        }
+    }
+}

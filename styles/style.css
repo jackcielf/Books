@@ -135,9 +135,29 @@ body {
   background-color: #ebecee;
 }
 
-.header_menu-hamburguer {
+#header {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+#header .container {
+  display: flex;
+  align-items: center;
+}
+#header .container .header_menu-hamburguer {
   width: 24px;
   height: 24px;
   background-image: url(/assets/images/Menu.svg);
+  background-repeat: no-repeat;
+  background-position: center;
   display: inline-block;
+}
+#header .container span, #header .container img {
+  padding: 1em;
+}
+#header .container .list-menu {
+  display: none;
+}
+#header .container .container__button:checked ~ .list-menu {
+  display: block;
 }/*# sourceMappingURL=style.css.map */
