@@ -1,0 +1,33 @@
+@import '../abstract/variables';
+
+#topics {
+    background: $blue-gradient;
+    text-align: center;
+    padding: 1em;
+
+    h2 {
+        color: $white;
+        text-transform: uppercase;
+        font-weight: 300;
+    }
+
+    .topics__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        li {
+            margin: 2em .5em;
+
+            a {
+                color: $white;
+                padding: 1em;
+                text-decoration: none;
+                font-size: 14px;
+                font-weight: 700;
+                background-color: $orange;
+            }
+        }
+    }
+
+} 

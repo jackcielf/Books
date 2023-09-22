@@ -1,0 +1,59 @@
+@import "../abstract/variables";
+
+#card {
+  background-color: $white;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  margin: 1em;
+  padding: 1em;
+
+  .card__description {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .5em;
+
+    .description {
+      img {
+        margin-bottom: 5px;
+      }
+
+      h3 {
+        color: $orange;
+        font-weight: 700;
+        // line-height: 1.1em;
+      }
+
+      h2 {
+        color: $darkblue;
+        font-size: 18px;
+        font-weight: 700;
+        margin: .5em 0;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .card__buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .buttons {
+    display: flex;
+
+    li {
+        margin: 0 .5em;
+    }
+  }
+
+  a {
+    background-color: $orange;
+    padding: 1em 2.2em;
+    color: $white;
+    font-weight: 700;
+    text-decoration: none;
+  }
+}

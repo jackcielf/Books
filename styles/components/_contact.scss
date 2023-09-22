@@ -1,0 +1,44 @@
+@import "../abstract/variables";
+
+#contact {
+  background-color: $white;
+  padding: 1em;
+
+  h2,
+  p {
+    background: $blue-gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  h2 {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  p {
+    font-weight: 300;
+    margin: 1em 0;
+  }
+
+  input {
+    width: 90%;
+    padding: 1em;
+    border: 1px solid $darkblue;
+    border-radius: 25px;
+    outline: none;
+    color: $darkblue;
+
+    &::placeholder {
+      font-family: $font;
+      color: $darkblue;
+      background: url(/assets/images/Email.svg) no-repeat;
+      padding-left: 2em;
+    }
+
+    &:hover {
+      border-color: #03017a;
+    }
+  }
+}

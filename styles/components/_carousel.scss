@@ -1,6 +1,7 @@
-@import '../abstract/variables';
+@import "../abstract/variables";
 
 #carousel {
+  h2 {
     color: $orange;
     background-color: $white;
     text-align: center;
@@ -8,4 +9,21 @@
     font-size: 18px;
     font-weight: 700;
     padding: 1em 0;
+  }
+
+  .swiper-slide {
+    img {
+      width: 100%;
+    }
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+
+  .swiper-pagination {
+    position: initial;
+    margin: .5em;
+  }
 }

@@ -70,17 +70,165 @@
 
     <section id="carousel">
       <h2>Novos lançamentos</h2>
-
       <div class="swiper">
-        <div class="swiper-swipper">
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="./assets/images/ApacheKafka.svg"  alt="">
+            <img src="./assets/images/ApacheKafka.svg" alt="Livro ApacheKafka">
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/Lideranca.svg" alt="Livro Liderança">
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/Javascript.svg" alt="Livro Javascript">
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/Guia-Front-end.svg" alt="Livro Guia Front-end">
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/Portugol.svg" alt="Livro Portugol">
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/Acessibilidade.svg" alt="Livro Acessibilidade">
+          </div>
           </div>
         </div>
-        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
     </section>
 
+    <div id="card">
+      <div class="card__description">
+        <div class="description">
+          <h3>Talvez você também tenha interesse por...</h3>
+          <h2>Angular 11 e Firebase</h2>
+          <p>Construindo uma aplicação integrada com a plataforma do Google.</p>
+        </div>
+        <img src="/assets/images/Angular.svg" alt="Livro Angular">
+      </div>
+
+      <div class="card__buttons">
+        <ul class="buttons">
+          <li>
+            <img src="/assets/images/Favoritos.svg" alt="Favoritar livro">
+          </li>
+          <li>
+            <img src="/assets/images/Compras.svg" alt="Adicionar ao carrinho">
+          </li>
+        </ul>
+        <a href="#">Saiba mais</a>
+      </div>
+    </div>
+
+    <section id="carousel">
+      <h2>Mais vendidos</h2>
+      <div class="swiper">
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./assets/images/ApacheKafka.svg" alt="Livro ApacheKafka">
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/Lideranca.svg" alt="Livro Liderança">
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/Javascript.svg" alt="Livro Javascript">
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/Guia-Front-end.svg" alt="Livro Guia Front-end">
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/Portugol.svg" alt="Livro Portugol">
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/Acessibilidade.svg" alt="Livro Acessibilidade">
+          </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+
+    <div id="card">
+      <div class="card__description">
+        <div class="description">
+          <img src="/assets/images/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+          <h3>Autora do Mês</h3>
+          <h2>Juliana Agarikov</h2>
+          <p>Construindo uma aplicação integrada com a plataforma do Google.</p>
+        </div>
+        <img src="/assets/images/Escritora.svg" alt="Escritora Juliana Agarikov">
+      </div>
+
+      <div class="card__buttons">
+        <ul class="buttons">
+          <li>
+            <img src="/assets/images/Favoritos.svg" alt="Favoritar livro">
+          </li>
+          <li>
+            <img src="/assets/images/Compras.svg" alt="Adicionar ao carrinho">
+          </li>
+        </ul>
+        <a href="#">Saiba mais</a>
+      </div>
+    </div>
+
+    <section id="topics">
+      <h2>Tópicos visitados recentemente</h2>
+      <ul class="topics__list">
+        <li>
+          <a href="#">Android</a>
+        </li>
+        <li>
+          <a href="#">Maketing Digital</a>
+        </li>
+        <li>
+          <a href="#">Agile</a>
+        </li>
+        <li>
+          <a href="#">Startups</a>
+        </li>
+        <li>
+          <a href="#">HTML e CSS</a>
+        </li>
+        <li>
+          <a href="#">Python</a>
+        </li>
+        <li>
+          <a href="#">oo</a>
+        </li>
+        <li>
+          <a href="#">Java</a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Fique por demntro das novidades!</h2>
+      <p>Atualização da e-book, novos livros, promoções e outros.</p>
+      <input type="email" placeholder="Cadastre seu e-mail">
+    </section>
+
+    <hr>
+
+    <footer id="footer">
+      <h2>Desenvolvido por @dev_JakkiFx</h2>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper('.swiper', {
+        spaceBetween: 10,
+        slidesPerView: 3,
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'bullets',
+        },
+      });
+    </script>
   </body>
 </html>
