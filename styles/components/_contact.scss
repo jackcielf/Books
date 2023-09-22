@@ -31,7 +31,7 @@
     color: $darkblue;
 
     &::placeholder {
-      font-family: $font;
+      font-family: $font-primary;
       color: $darkblue;
       background: url(/assets/images/Email.svg) no-repeat;
       padding-left: 2em;

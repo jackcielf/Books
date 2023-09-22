@@ -1,15 +1,15 @@
 /*
     http://meyerweb.com/eric/tools/css/reset/ 
 */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Poppins:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Poppins:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Poppins:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Poppins:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Poppins:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Poppins:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Poppins:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Poppins:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Poppins:wght@300;400;500;700&display=swap");
 html,
 body,
 div,
@@ -156,6 +156,9 @@ body {
   display: flex;
   align-items: center;
 }
+#header .container h1 {
+  display: none;
+}
 #header .container .header_menu-hamburguer {
   width: 24px;
   height: 24px;
@@ -198,7 +201,34 @@ body {
 #header .container .container__button:checked ~ .list-menu {
   display: block;
 }
+#header .options {
+  display: none;
+}
 
+@media screen and (min-width: 1024px) {
+  #header .container h1 {
+    display: block;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+  }
+  #header .container .header_menu-hamburguer {
+    display: none;
+  }
+  #header .options {
+    display: flex;
+    align-items: center;
+    -moz-column-gap: 1em;
+         column-gap: 1em;
+  }
+  #header .options li {
+    text-transform: uppercase;
+  }
+  #header .options li a {
+    text-decoration: none;
+    color: #000;
+  }
+}
 #banner {
   background: linear-gradient(97.5deg, #012d4e 35.49%, #326589 165.37%);
   color: #fff;

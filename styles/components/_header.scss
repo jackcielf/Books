@@ -10,6 +10,10 @@
     display: flex;
     align-items: center;
 
+    h1 {
+      display: none;
+    }
+
     .header_menu-hamburguer {
       width: 24px;
       height: 24px;
@@ -52,12 +56,49 @@
     }
 
     .container__button {
-        display: none;
+      display: none;
     }
 
     // Abrindo e fechando o menu
     .container__button:checked ~ .list-menu {
       display: block;
+    }
+  }
+
+  .options {
+    display: none;  
+  }
+}
+
+// Responsividade para tela de computadores
+@media screen and (min-width: 1024px) {
+  #header {
+    .container {
+      h1 {
+        display: block;
+        font-family: $font-secundary;
+        font-weight: 700;
+        font-size: 30px;
+      }
+      
+      .header_menu-hamburguer {
+        display: none;
+      }
+    }
+
+    .options {
+      display: flex;
+      align-items: center;
+      column-gap: 1em;
+
+      li {
+        text-transform: uppercase;
+
+        a {
+          text-decoration: none;
+          color: $black;
+        }
+      }
     }
   }
 }
