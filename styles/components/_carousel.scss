@@ -27,3 +27,41 @@
     margin: .5em;
   }
 }
+
+
+@media screen and (min-width: 1024px) {
+  #carousel {
+    h2 {
+      font-size: 26px;
+    }
+
+    .swiper {
+      width: 60%;
+
+        .swiper-slide {
+          img {
+            width: 100%;
+          }
+        }
+      
+        .swiper-pagination {
+          margin: 2em 0;
+        }
+      }
+
+      .swiper-button-prev {
+        margin-left: 20%;
+      }
+
+      .swiper-button-next {
+        margin-right: 19.5%;
+      }
+
+      .swiper-button-prev,
+      .swiper-button-next {
+        display: block;
+        top: 83%;
+      }
+    }
+
+  }

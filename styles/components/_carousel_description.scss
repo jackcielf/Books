@@ -10,7 +10,11 @@
   .card__description {
     display: flex;
     justify-content: space-between;
-    margin-bottom: .5em;
+    margin-bottom: 0.5em;
+
+    img {
+      border-radius: 3px;
+    }
 
     .description {
       img {
@@ -27,7 +31,7 @@
         color: $darkblue;
         font-size: 18px;
         font-weight: 700;
-        margin: .5em 0;
+        margin: 0.5em 0;
       }
 
       p {
@@ -45,7 +49,7 @@
     display: flex;
 
     li {
-        margin: 0 .5em;
+      margin: 0 0.5em;
     }
   }
 
@@ -54,6 +58,14 @@
     padding: 1em 2.2em;
     color: $white;
     font-weight: 700;
+    border-radius: 3px;
     text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #card {
+    width: 40%;
+    margin: 2em auto;
   }
 }

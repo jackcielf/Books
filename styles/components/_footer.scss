@@ -1,10 +1,60 @@
-@import '../abstract/variables';
+@import "../abstract/variables";
 
 hr {
-    margin: 0;
+  margin: 0;
 }
 
 #footer {
-    background-color: $white;
-    padding: 1em;
+  background-color: $white;
+  padding: 1em;
+  position: relative;
+  padding-bottom: 3em;
+
+  .list__footer {
+    display: none;
+  }
+
+  .developer {
+    width: 100%;
+    text-align: end;
+    padding-right: 3em;
+    position: absolute;
+    bottom: 0;
+    font-size: 1em;
+    color: rgba(0, 0, 0, 0.712);
+    background-color: rgba(128, 128, 128, 0.3);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #footer {
+    display: flex;
+    justify-content: space-around;
+
+    h2 {
+      font-size: 24px;
+    }
+
+    .list__footer {
+      display: block;
+
+      .title {
+        color: $gray;
+        font-size: 14px;
+        text-transform: uppercase;
+      }
+
+      li {
+        display: flex;
+        align-items: center;
+        column-gap: 0.6em;
+        margin: 1em 0;
+
+        a {
+          color: $dark-gray;
+          text-decoration: none;
+        }
+      }
+    }
+  }
 }

@@ -26,8 +26,29 @@
                 font-size: 14px;
                 font-weight: 700;
                 background-color: $orange;
+                border-radius: 10px;
             }
         }
     }
 
 } 
+
+@media screen and (min-width: 1024px) {
+    #topics {
+        h2 {
+            font-size: 24px;
+        }
+    
+        .topics__list {
+            margin-top: 1em;
+            column-gap: 1em;
+
+            li {
+                a {
+                    font-size: 24px;
+                }
+            }
+        }
+    
+    } 
+}

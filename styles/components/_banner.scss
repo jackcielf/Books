@@ -36,3 +36,18 @@
     }
 }
 
+@media screen and (min-width: 1024px) {
+    #banner {
+        h2 {
+            font-size: 36px;
+        }
+    
+        input {
+            width: 50%;
+    
+            &::placeholder {
+                background-position: 6em;
+            }
+        }
+    }
+}

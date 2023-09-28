@@ -42,3 +42,37 @@
     }
   }
 }
+
+@media screen and (min-width: 1024px) {
+  #contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1em;
+  
+    h2 {
+      font-size: 24px;
+      margin: .5em 0;
+      font-weight: 500;
+    }
+  
+    p {
+      width: 90%;
+      font-weight: 300;
+      margin: 1em 0;
+    }
+  
+    input {
+      width: 30%;
+      padding: 1em;
+      border: 1px solid $darkblue;
+      border-radius: 25px;
+      outline: none;
+      color: $darkblue;
+  
+      &:hover {
+        border-color: #03017a;
+      }
+    }
+  }
+}
