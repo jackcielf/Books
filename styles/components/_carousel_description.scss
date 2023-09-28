@@ -69,3 +69,20 @@
     margin: 2em auto;
   }
 }
+
+@media screen and (min-width: 1728px) {
+  #card {
+    width: 60%;
+  box-shadow: 0 4px 4px transparent;
+  margin: 6% 0 0 3em;
+  padding: 1em;
+
+    h2 {
+      font-size: 32px;
+    }
+
+    p {
+      font-size: 1em;
+    }
+  }
+}

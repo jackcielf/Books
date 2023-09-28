@@ -10,6 +10,10 @@
     display: flex;
     align-items: center;
 
+    p {
+      display: none;
+    }
+
     h1 {
       display: none;
     }
@@ -74,7 +78,7 @@
   }
 }
 
-// Responsividade para tela de computadores
+// Responsividade para tela de tablets
 @media screen and (min-width: 1024px) {
   #header {
     .container {
@@ -137,6 +141,24 @@
           color: $black;
         }
       }
+    }
+  }
+}
+
+// Responsividade para tela de computadores
+@media screen and (min-width: 1728px) {
+  #header {
+    padding: 0 2em;
+
+    .container {
+      p {
+        display: block;
+      }
+    }
+
+    .options {
+      margin-right: auto;
+      margin-left: 2em;
     }
   }
 }

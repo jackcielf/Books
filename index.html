@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Books</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
+
   <body>
     <header id="header">
       <div class="container">
@@ -42,26 +41,26 @@
       <ul class="options">
         <input type="checkbox" id="options__button" class="options__button">
         <label for="options__button">
-        <li>Categorias</li>
-      </label>
+          <li>Categorias</li>
+        </label>
 
-      <ul class="list-menu">
-        <li class="list-menu__item">
-          <a href="#">Programação</a>
-        </li>
-        <li class="list-menu__item">
-          <a href="#">Front-end</a>
-        </li>
-        <li class="list-menu__item">
-          <a href="#">Infraestrutura</a>
-        </li>
-        <li class="list-menu__item">
-          <a href="#">Business</a>
-        </li>
-        <li class="list-menu__item">
-          <a href="#">Design & UX</a>
-        </li>
-      </ul>
+        <ul class="list-menu">
+          <li class="list-menu__item">
+            <a href="#">Programação</a>
+          </li>
+          <li class="list-menu__item">
+            <a href="#">Front-end</a>
+          </li>
+          <li class="list-menu__item">
+            <a href="#">Infraestrutura</a>
+          </li>
+          <li class="list-menu__item">
+            <a href="#">Business</a>
+          </li>
+          <li class="list-menu__item">
+            <a href="#">Design & UX</a>
+          </li>
+        </ul>
 
         <li><a href="#">Favoritos</a></li>
         <li><a href="#">Minha estante</a></li>
@@ -69,26 +68,16 @@
 
       <div class="container">
         <a href="#" class="favoritos">
-          <img
-            src="./assets/images/Favoritos.svg"
-            alt="Meus favoritos"
-            title="Favoritos"
-          />
+          <img src="./assets/images/Favoritos.svg" alt="Meus favoritos" title="Favoritos" />
         </a>
         <a href="#">
-          <img
-            src="./assets/images/Compras.svg"
-            alt="Carrinho de compras"
-            title="Compras"
-          />
+          <img src="./assets/images/Compras.svg" alt="Carrinho de compras" title="Compras" />
         </a>
+        <p>Minha sacola</p>
         <a href="#">
-          <img
-            src="./assets/images/Usuario.svg"
-            alt="Meu perfil"
-            title="Perfil"
-          />
+          <img src="./assets/images/Usuario.svg" alt="Meu perfil" title="Perfil" />
         </a>
+        <p>Meu perfil</p>
       </div>
     </header>
 
@@ -99,113 +88,114 @@
     </section>
 
     <section id="carousel">
-      <h2>Novos lançamentos</h2>
-      <div class="swiper">
-        <div class="swiper-pagination"></div>
+      <h2 class="title">Novos lançamentos</h2>
+      <div class="carousel__container">
+        <div class="swiper">
+          <div class="swiper-pagination"></div>
 
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="./assets/images/ApacheKafka.svg" alt="Livro ApacheKafka">
-          </div>
-          <div class="swiper-slide">
-            <img src="./assets/images/Lideranca.svg" alt="Livro Liderança">
-          </div>
-          <div class="swiper-slide">
-            <img src="./assets/images/Javascript.svg" alt="Livro Javascript">
-          </div>
-          <div class="swiper-slide">
-            <img src="./assets/images/Guia-Front-end.svg" alt="Livro Guia Front-end">
-          </div>
-          <div class="swiper-slide">
-            <img src="./assets/images/Portugol.svg" alt="Livro Portugol">
-          </div>
-          <div class="swiper-slide">
-            <img src="./assets/images/Acessibilidade.svg" alt="Livro Acessibilidade">
-          </div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./assets/images/ApacheKafka.svg" alt="Livro ApacheKafka">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/Lideranca.svg" alt="Livro Liderança">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/Javascript.svg" alt="Livro Javascript">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/Guia-Front-end.svg" alt="Livro Guia Front-end">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/Portugol.svg" alt="Livro Portugol">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/Acessibilidade.svg" alt="Livro Acessibilidade">
+            </div>
           </div>
         </div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+
+        <div id="card">
+          <div class="card__description">
+            <div class="description">
+              <h3>Talvez você também tenha interesse por...</h3>
+              <h2>Angular 11 e Firebase</h2>
+              <p>Construindo uma aplicação integrada com a plataforma do Google.</p>
+            </div>
+            <img src="/assets/images/Angular.svg" alt="Livro Angular">
+          </div>
+
+          <div class="card__buttons">
+            <ul class="buttons">
+              <li>
+                <img src="/assets/images/Favoritos.svg" alt="Favoritar livro">
+              </li>
+              <li>
+                <img src="/assets/images/Compras.svg" alt="Adicionar ao carrinho">
+              </li>
+            </ul>
+            <a href="#">Saiba mais</a>
+          </div>
+        </div>
       </div>
     </section>
 
-    <div id="card">
-      <div class="card__description">
-        <div class="description">
-          <h3>Talvez você também tenha interesse por...</h3>
-          <h2>Angular 11 e Firebase</h2>
-          <p>Construindo uma aplicação integrada com a plataforma do Google.</p>
-        </div>
-        <img src="/assets/images/Angular.svg" alt="Livro Angular">
-      </div>
-
-      <div class="card__buttons">
-        <ul class="buttons">
-          <li>
-            <img src="/assets/images/Favoritos.svg" alt="Favoritar livro">
-          </li>
-          <li>
-            <img src="/assets/images/Compras.svg" alt="Adicionar ao carrinho">
-          </li>
-        </ul>
-        <a href="#">Saiba mais</a>
-      </div>
-    </div>
 
     <section id="carousel">
-      <h2>Mais vendidos</h2>
-      <div class="swiper">
-        <div class="swiper-pagination"></div>
+      <h2 class="title">Mais vendidos</h2>
+      <div class="carousel__container">
+        <div class="swiper">
+          <div class="swiper-pagination"></div>
 
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="./assets/images/ApacheKafka.svg" alt="Livro ApacheKafka">
-          </div>
-          <div class="swiper-slide">
-            <img src="./assets/images/Lideranca.svg" alt="Livro Liderança">
-          </div>
-          <div class="swiper-slide">
-            <img src="./assets/images/Javascript.svg" alt="Livro Javascript">
-          </div>
-          <div class="swiper-slide">
-            <img src="./assets/images/Guia-Front-end.svg" alt="Livro Guia Front-end">
-          </div>
-          <div class="swiper-slide">
-            <img src="./assets/images/Portugol.svg" alt="Livro Portugol">
-          </div>
-          <div class="swiper-slide">
-            <img src="./assets/images/Acessibilidade.svg" alt="Livro Acessibilidade">
-          </div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./assets/images/ApacheKafka.svg" alt="Livro ApacheKafka">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/Lideranca.svg" alt="Livro Liderança">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/Javascript.svg" alt="Livro Javascript">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/Guia-Front-end.svg" alt="Livro Guia Front-end">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/Portugol.svg" alt="Livro Portugol">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/Acessibilidade.svg" alt="Livro Acessibilidade">
+            </div>
           </div>
         </div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+      </div>
+
+      <div id="card">
+        <div class="card__description">
+          <div class="description">
+            <img src="/assets/images/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+            <h3>Autora do Mês</h3>
+            <h2>Juliana Agarikov</h2>
+            <p>Construindo uma aplicação integrada com a plataforma do Google.</p>
+          </div>
+          <img src="/assets/images/Escritora.svg" alt="Escritora Juliana Agarikov">
+        </div>
+
+        <div class="card__buttons">
+          <ul class="buttons">
+            <li>
+              <img src="/assets/images/Favoritos.svg" alt="Favoritar livro">
+            </li>
+            <li>
+              <img src="/assets/images/Compras.svg" alt="Adicionar ao carrinho">
+            </li>
+          </ul>
+          <a href="#">Saiba mais</a>
+        </div>
+      </div>
       </div>
     </section>
 
-    <div id="card">
-      <div class="card__description">
-        <div class="description">
-          <img src="/assets/images/Estrelinhas.svg" alt="Avaliação 5 estrelas">
-          <h3>Autora do Mês</h3>
-          <h2>Juliana Agarikov</h2>
-          <p>Construindo uma aplicação integrada com a plataforma do Google.</p>
-        </div>
-        <img src="/assets/images/Escritora.svg" alt="Escritora Juliana Agarikov">
-      </div>
-
-      <div class="card__buttons">
-        <ul class="buttons">
-          <li>
-            <img src="/assets/images/Favoritos.svg" alt="Favoritar livro">
-          </li>
-          <li>
-            <img src="/assets/images/Compras.svg" alt="Adicionar ao carrinho">
-          </li>
-        </ul>
-        <a href="#">Saiba mais</a>
-      </div>
-    </div>
 
     <section id="topics">
       <h2>Tópicos visitados recentemente</h2>
@@ -339,4 +329,5 @@
       });
     </script>
   </body>
+
 </html>

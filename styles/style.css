@@ -156,6 +156,9 @@ body {
   display: flex;
   align-items: center;
 }
+#header .container p {
+  display: none;
+}
 #header .container h1 {
   display: none;
 }
@@ -261,6 +264,18 @@ body {
     color: #000;
   }
 }
+@media screen and (min-width: 1728px) {
+  #header {
+    padding: 0 2em;
+  }
+  #header .container p {
+    display: block;
+  }
+  #header .options {
+    margin-right: auto;
+    margin-left: 2em;
+  }
+}
 #banner {
   background: linear-gradient(97.5deg, #012d4e 35.49%, #326589 165.37%);
   color: #fff;
@@ -316,7 +331,24 @@ body {
     background-position: 6em;
   }
 }
-#carousel h2 {
+@media screen and (min-width: 1728px) {
+  #banner {
+    padding: 5em 0;
+  }
+  #banner h2 {
+    font-size: 36px;
+  }
+  #banner input {
+    width: 35%;
+  }
+  #banner input::-moz-placeholder {
+    background-position: 10em;
+  }
+  #banner input::placeholder {
+    background-position: 10em;
+  }
+}
+#carousel .title {
   color: #eb9b00;
   background-color: #fff;
   text-align: center;
@@ -327,10 +359,6 @@ body {
 }
 #carousel .swiper-slide img {
   width: 100%;
-}
-#carousel .swiper-button-prev,
-#carousel .swiper-button-next {
-  display: none;
 }
 #carousel .swiper-pagination {
   position: initial;
@@ -350,16 +378,15 @@ body {
   #carousel .swiper .swiper-pagination {
     margin: 2em 0;
   }
-  #carousel .swiper-button-prev {
-    margin-left: 20%;
+}
+@media screen and (min-width: 1728px) {
+  #carousel .carousel__container {
+    display: flex;
+    margin: 0 20vw 3em 20vw;
+    align-items: center;
   }
-  #carousel .swiper-button-next {
-    margin-right: 19.5%;
-  }
-  #carousel .swiper-button-prev,
-  #carousel .swiper-button-next {
-    display: block;
-    top: 83%;
+  #carousel .swiper {
+    width: 50%;
   }
 }
 #card {
@@ -416,6 +443,20 @@ body {
   #card {
     width: 40%;
     margin: 2em auto;
+  }
+}
+@media screen and (min-width: 1728px) {
+  #card {
+    width: 60%;
+    box-shadow: 0 4px 4px transparent;
+    margin: 6% 0 0 3em;
+    padding: 1em;
+  }
+  #card h2 {
+    font-size: 32px;
+  }
+  #card p {
+    font-size: 1em;
   }
 }
 #topics {
@@ -546,14 +587,11 @@ hr {
   display: none;
 }
 #footer .developer {
-  width: 100%;
-  text-align: end;
-  padding-right: 3em;
   position: absolute;
   bottom: 0;
+  right: 0;
   font-size: 1em;
   color: rgba(0, 0, 0, 0.712);
-  background-color: rgba(128, 128, 128, 0.3);
 }
 
 @media screen and (min-width: 1024px) {
