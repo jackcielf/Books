@@ -45,13 +45,23 @@ hr {
         display: flex;
         align-items: center;
         column-gap: 0.6em;
-        margin: 1em 0;
+        margin: 1em 1em;
 
         a {
           color: $dark-gray;
           text-decoration: none;
         }
       }
+    }
+  }
+}
+
+@media screen and (min-width: 1728px) {
+  #footer {
+    padding: 2em;
+    
+    .list__footer {
+      border-left: 1px solid $gray;
     }
   }
 }
