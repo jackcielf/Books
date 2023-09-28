@@ -170,6 +170,12 @@ body {
   background-position: center;
   display: inline-block;
 }
+#header .container .container__button:checked ~ .container__label > .header_menu-hamburguer {
+  background-image: url(/assets/images/MenuAberto.svg);
+}
+#header .container .container__button:checked ~ .container__label {
+  background: linear-gradient(97.5deg, #012d4e 35.49%, #326589 165.37%);
+}
 #header .container span,
 #header .container img {
   padding: 1em;
@@ -243,6 +249,12 @@ body {
     padding: 1em;
     background-color: #fff;
   }
+  #header .options .list-menu .list-menu__item:hover {
+    background-color: #012d4e;
+  }
+  #header .options .list-menu .list-menu__item:hover a {
+    -webkit-text-fill-color: #fff;
+  }
   #header .options .list-menu .list-menu__item a {
     background: linear-gradient(97.5deg, #012d4e 35.49%, #326589 165.37%);
     -webkit-background-clip: text;
@@ -258,10 +270,18 @@ body {
   }
   #header .options li {
     text-transform: uppercase;
+    padding: 2em 1em;
   }
   #header .options li a {
     text-decoration: none;
     color: #000;
+  }
+  #header .options .options__button:checked ~ .options__label > .header_menu-hamburguer {
+    background-image: url(/assets/images/MenuAberto.svg);
+  }
+  #header .options .options__button:checked ~ .options__label {
+    background: linear-gradient(97.5deg, #012d4e 35.49%, #326589 165.37%);
+    color: #fff;
   }
 }
 @media screen and (min-width: 1728px) {
